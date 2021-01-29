@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keep'r</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Lato:wght@300;400;700;900&family=Press+Start+2P&family=Roboto:wght@300;400;500;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1>Score Keep'r</h1>
+    <main>
+        <section>
+            <figure>
+                <img src="vector-creator.png" alt="A cowboy">
+                <figcaption class="label">Pew Pew Pew💥</figcaption>
+            </figure>
+            <p><span id="counterOne" class="counterDisplay">0</span> to <span id="counterTwo"
+                    class="counterDisplay">0</span></p>
+            <p id="description">(use the buttons below to keep score)</p>
+            <div id="scores">
+                <label for="score" class="label">Playing To:</label>
+                <select name="score" id="score">
+                    <option value="default">0⌄</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <label for="score" class="label">Shots.</label>
+            </div>
+            <div id="buttons">
+                <button id="buttonp1"><b>+1</b> Player One <i class="far fa-hand-point-right"></i></button>
+                <button id="buttonp2"><b>+1</b> Player Two <i class="far fa-hand-point-left"></i></button>
+                <button id="reset">Reset</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
